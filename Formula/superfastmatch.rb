@@ -6,13 +6,13 @@ class Superfastmatch < Formula
   # url 'https://github.com/mediastandardstrust/superfastmatch/tarball/master'
   # sha1 'c42cfa9199758eeffefff539c5eddb8871f329fc'
 
-  depends_on 're2' #
+  depends_on 're2'            # --HEAD installation required
+  depends_on 'kyoto-cabinet'  # --use-llvm required
 
   depends_on 'gflags'
   depends_on 'google-perftools'
   depends_on 'ctemplate'
   depends_on 'google-sparsehash'
-  depends_on 'kyoto-cabinet'
   depends_on 'kyoto-tycoon'
 
   def install
